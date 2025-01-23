@@ -1,20 +1,22 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "field:doc_name",
  "creation": "2025-01-23 11:02:07.125065",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "doc_name",
   "fname",
-  "lname",
-  "amended_from"
+  "lname"
  ],
  "fields": [
   {
    "default": "whoknows",
    "fieldname": "fname",
    "fieldtype": "Data",
-   "label": "fname"
+   "label": "fname",
+   "unique": 1
   },
   {
    "default": "someone",
@@ -23,23 +25,19 @@
    "label": "lname"
   },
   {
-   "fieldname": "amended_from",
-   "fieldtype": "Link",
-   "label": "Amended From",
-   "no_copy": 1,
-   "options": "something",
-   "print_hide": 1,
-   "read_only": 1,
-   "search_index": 1
+   "fieldname": "doc_name",
+   "fieldtype": "Data",
+   "label": "doc_name",
+   "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
- "is_submittable": 1,
  "links": [],
- "modified": "2025-01-23 12:11:22.332433",
+ "modified": "2025-01-23 12:36:53.068015",
  "modified_by": "Administrator",
  "module": "Demo App",
  "name": "something",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -55,7 +53,10 @@
    "write": 1
   }
  ],
+ "search_fields": "fname",
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "fname"
 }
