@@ -1,0 +1,115 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-01-22 10:35:19.830675",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "personal_details_section",
+  "id",
+  "date",
+  "data",
+  "gender",
+  "educational_details_section",
+  "subjects",
+  "enrollment_date",
+  "status",
+  "notes",
+  "percentage",
+  "subject"
+ ],
+ "fields": [
+  {
+   "fieldname": "personal_details_section",
+   "fieldtype": "Section Break",
+   "label": "Personal details"
+  },
+  {
+   "fieldname": "id",
+   "fieldtype": "Autocomplete",
+   "label": "Id",
+   "search_index": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "data",
+   "fieldtype": "Date",
+   "label": "Data"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "gender",
+   "options": "Male\nFemale"
+  },
+  {
+   "fieldname": "educational_details_section",
+   "fieldtype": "Section Break",
+   "label": "Educational Details"
+  },
+  {
+   "fieldname": "enrollment_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Enrollment Date",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "label": "Status"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "percentage",
+   "fieldtype": "Percent",
+   "label": "Percentage"
+  },
+  {
+   "fieldname": "subjects",
+   "fieldtype": "Column Break",
+   "label": "subjects",
+   "options": "Items"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Table",
+   "label": "subjects",
+   "options": "Subjects"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-22 11:16:54.494010",
+ "modified_by": "Administrator",
+ "module": "Demo App",
+ "name": "student",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
