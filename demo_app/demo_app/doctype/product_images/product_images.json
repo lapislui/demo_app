@@ -16,20 +16,20 @@
    "in_list_view": 1,
    "in_preview": 1,
    "in_standard_filter": 1,
-   "label": "item name"
+   "label": "Product name"
   },
   {
    "fieldname": "item_img",
    "fieldtype": "Attach Image",
    "in_preview": 1,
    "in_standard_filter": 1,
-   "label": "item image"
+   "label": "Product image"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-01-22 14:57:42.144041",
+ "modified": "2025-01-24 15:40:02.466041",
  "modified_by": "Administrator",
  "module": "Demo App",
  "name": "product images",

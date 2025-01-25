@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "STUD.####",
  "creation": "2025-01-22 10:35:19.830675",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -8,14 +9,17 @@
   "personal_details_section",
   "id",
   "date",
+  "column_break_luhv",
   "data",
   "gender",
   "educational_details_section",
-  "subjects",
   "enrollment_date",
   "status",
-  "notes",
   "percentage",
+  "grade",
+  "subjects",
+  "notes",
+  "section_break_rbeo",
   "subject"
  ],
  "fields": [
@@ -28,8 +32,7 @@
    "fieldname": "id",
    "fieldtype": "Autocomplete",
    "label": "Id",
-   "search_index": 1,
-   "set_only_once": 1
+   "search_index": 1
   },
   {
    "fieldname": "date",
@@ -39,13 +42,15 @@
   {
    "fieldname": "data",
    "fieldtype": "Date",
-   "label": "Data"
+   "label": "Date"
   },
   {
    "fieldname": "gender",
    "fieldtype": "Select",
    "label": "gender",
-   "options": "Male\nFemale"
+   "options": "Male\nFemale\nNon-Binary\nPrefer Not to Say\nOther",
+   "placeholder": "select your gender",
+   "reqd": 1
   },
   {
    "fieldname": "educational_details_section",
@@ -62,8 +67,9 @@
   },
   {
    "fieldname": "status",
-   "fieldtype": "Data",
-   "label": "Status"
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Pass\nFail\nDroupout"
   },
   {
    "fieldname": "notes",
@@ -77,23 +83,37 @@
   },
   {
    "fieldname": "subjects",
-   "fieldtype": "Column Break",
-   "label": "subjects",
-   "options": "Items"
+   "fieldtype": "Column Break"
   },
   {
    "fieldname": "subject",
    "fieldtype": "Table",
    "label": "subjects",
    "options": "Subjects"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Select",
+   "label": "Grade",
+   "options": "A+\nA\nB+\nB\nC+\nC\nF",
+   "placeholder": "Grade"
+  },
+  {
+   "fieldname": "column_break_luhv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_rbeo",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-22 11:16:54.494010",
+ "modified": "2025-01-24 15:44:44.796042",
  "modified_by": "Administrator",
  "module": "Demo App",
  "name": "student",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {

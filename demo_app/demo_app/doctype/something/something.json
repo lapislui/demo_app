@@ -1,7 +1,8 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "allow_rename": 1,
- "autoname": "field:doc_name",
+ "autoname": "doc_name.###",
  "creation": "2025-01-23 11:02:07.125065",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -28,16 +29,17 @@
    "fieldname": "doc_name",
    "fieldtype": "Data",
    "label": "doc_name",
+   "translatable": 1,
    "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-23 12:36:53.068015",
+ "modified": "2025-01-24 14:59:22.612327",
  "modified_by": "Administrator",
  "module": "Demo App",
  "name": "something",
- "naming_rule": "By fieldname",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
@@ -58,5 +60,9 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "title_field": "fname"
+ "title_field": "fname",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1,
+ "translated_doctype": 1
 }

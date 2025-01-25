@@ -1,35 +1,40 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "PRO.#####",
  "creation": "2025-01-22 14:34:09.783695",
+ "default_email_template": "submition",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "product_id",
   "product_name",
+  "taga",
+  "column_break_azjs",
   "category",
   "price",
-  "stock",
   "avaibility",
-  "taga",
   "discription",
+  "section_break_dvjt",
   "table_vrwq"
  ],
  "fields": [
   {
    "fieldname": "product_id",
-   "fieldtype": "Data",
+   "fieldtype": "Barcode",
    "label": "product id"
   },
   {
    "fieldname": "product_name",
    "fieldtype": "Data",
+   "hidden": 1,
    "label": "product name"
   },
   {
    "fieldname": "category",
-   "fieldtype": "Select",
-   "label": "category"
+   "fieldtype": "Link",
+   "label": "category",
+   "options": "Category"
   },
   {
    "fieldname": "price",
@@ -37,19 +42,15 @@
    "label": "Price"
   },
   {
-   "fieldname": "stock",
-   "fieldtype": "Int",
-   "label": "Stock"
-  },
-  {
    "fieldname": "avaibility",
    "fieldtype": "Select",
-   "label": "avaibility"
+   "label": "avaibility",
+   "options": "Avialable\nOut of stock"
   },
   {
    "fieldname": "taga",
    "fieldtype": "Small Text",
-   "label": "Taga"
+   "label": "Tag"
   },
   {
    "fieldname": "discription",
@@ -60,14 +61,23 @@
    "fieldname": "table_vrwq",
    "fieldtype": "Table",
    "options": "product images"
+  },
+  {
+   "fieldname": "column_break_azjs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_dvjt",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-22 14:57:30.516178",
+ "modified": "2025-01-24 15:54:52.689061",
  "modified_by": "Administrator",
  "module": "Demo App",
  "name": "product catalogue",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
