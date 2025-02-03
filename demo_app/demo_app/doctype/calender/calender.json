@@ -1,40 +1,51 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
- "autoname": "Calender-.YYYY.-.#####",
- "creation": "2025-01-28 18:34:58.128535",
+ "autoname": "Calen-.####",
+ "creation": "2025-01-31 12:01:32.873662",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "title",
   "starts_on",
-  "ends_on"
+  "onds_on",
+  "project"
  ],
  "fields": [
   {
    "fieldname": "title",
    "fieldtype": "Data",
-   "label": "Title"
+   "in_list_view": 1,
+   "label": "title",
+   "reqd": 1
   },
   {
    "fieldname": "starts_on",
    "fieldtype": "Datetime",
-   "label": "Start Date"
+   "label": "start on"
   },
   {
-   "fieldname": "ends_on",
+   "fieldname": "onds_on",
    "fieldtype": "Datetime",
-   "label": "End Date"
+   "label": "ends on"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "student"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_calendar_and_gantt": 1,
  "links": [],
- "modified": "2025-01-31 11:17:38.224298",
+ "modified": "2025-01-31 12:11:49.082685",
  "modified_by": "Administrator",
  "module": "Demo App",
- "name": "Calendar",
+ "name": "Calender",
  "naming_rule": "Expression (old style)",
+ "nsm_parent_field": "parent_calender",
  "owner": "Administrator",
  "permissions": [
   {
@@ -51,9 +62,11 @@
   }
  ],
  "quick_entry": 1,
- "show_title_field_in_link": 1,
+ "search_fields": "title",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "title_field": "title"
+ "timeline_field": "project",
+ "title_field": "title",
+ "track_seen": 1
 }

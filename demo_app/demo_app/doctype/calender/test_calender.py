@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class Testcalendar(FrappeTestCase):
+class TestCalender(FrappeTestCase):
 	pass
